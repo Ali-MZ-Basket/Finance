@@ -1,0 +1,28 @@
+﻿@typeparam TItem
+
+<div class="container">
+    <form class="body-form" id="frmMain" name="frmMain" method="post" action="https://go.xero.com/AccountsReceivable/Search.aspx" enctype="application/x-www-form-urlencoded">
+        <input id="backButtonHack" name="backButtonHack" type="hidden" value="">
+        <input type="hidden" name="XeroPrevPage" id="XeroPrevPage" value="https://go.xero.com/Bank/BankTransactions.aspx?accountId=562555F28CDE4CE982030363922537A4"><input type="hidden" name="Action" id="Action" value=""><input type="hidden" name="ActionArgument" id="ActionArgument" value=""><input name="__RequestVerificationToken" type="hidden" value="H_x0KUkFn9gmEh7UZ_uz6qNZK3KJNV-RFuC9du0msivptwW2gC5gTDxVwBxx1eAaePQCuu900rIXihKqcEFvZ605oNwHbGC4a7XPgq4p4NFhMSsSi3HlX7KpGFk0np-VmInNUoJcOnezItox0iqGmDUjMSw1"><input type="hidden" name="CsrfToken" value=""><input type="hidden" name="HistoryReferenceID" id="HistoryReferenceID" value=""><input type="hidden" id="HelpCentreUrl" value="https://help.xero.com/int/"><input type="hidden" id="SecureHelpCentreUrl" value="https://help.xero.com/"><input type="hidden" id="HelpRegion" value="int">
+        <input type="hidden" id="InvoicesWithNewTaxRateJSON" name="InvoicesWithNewTaxRateJSON">
+        <div class="w-content ">
+            <div class="document collection forms invoices">
+                <GeneralTableNavbar></GeneralTableNavbar>
+                <div class="bridge-lower">
+                    <GeneralTableActionBar></GeneralTableActionBar>
+                    <GeneralGrid Items="Items"></GeneralGrid>
+                    <GeneralTablePagination></GeneralTablePagination>
+                    <div class="shadow" id="ext-gen467">&nbsp;</div>
+                </div>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+    </form>
+</div>
+
+@code {
+
+    [Parameter]
+    public List<TItem> Items { get; set; }
+
+}

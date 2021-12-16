@@ -1,0 +1,91 @@
+﻿<div id="ajaxMessageHolder" style="display:none">
+    <em>&nbsp;</em>
+    <div id="messageDiv" class="message">&nbsp;</div>
+</div>
+<div id="banner"></div>
+<div id="marked" class="notify bg-green bigger" style="display:none;">
+    <em>
+        &nbsp;
+    </em><a href="javascript:" class="icons msg-close" id="ext-gen469">
+        &nbsp;
+    </a>
+    <div class="message">
+        <p id="ext-gen468">
+            &nbsp;
+        </p>
+    </div>
+</div>
+<div id="sbContainer_" class="search action open x-hidden">
+    <a href="https://go.xero.com/AccountsReceivable/Search.aspx#" class="icons search-delete">
+        &nbsp;
+    </a>
+    <div class="field"><label for="sb_txtReference">Enter Number, Reference, Contact or Amount</label><input autocomplete="off" type="text" id="sb_txtReference" name="invoiceReference" value="" placeholder="" style="width:220px;"></div>
+    <div class="field">
+        <label for="sb_drpWithin_value">
+            Search Within
+        </label><input type="hidden" name="sb_drpWithin" id="sb_drpWithin" value="any" style="display:none;">
+        <div class="dd" id="ext-gen3" style="width: 94px;">
+            <input autocomplete="off" type="text" name="sb_drpWithin_value" id="sb_drpWithin_value" value="Any date">
+            <div id="sb_drpWithin_toggle" class="toggleimg select"><span class="icons">&nbsp;</span></div>
+        </div>
+        <div id="sb_drpWithin_suggestions" class="autocomplete" style="display: none; height: 200px; width: 200px;">
+            <div>
+                <div>Any date</div>
+                <div>Transaction date</div>
+                <div>Due date</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="field" id="ext-gen17">
+        <label for="sb_dteStartDate" style="width:90px;" id="ext-gen18">
+            Start Date
+            <a class="icons date-tip" href="javascript:" id="ext-gen19" style="visibility: hidden;">&nbsp;</a>
+        </label>
+        <div id="sb_dteStartDate_container" class="datePicker dd" style="float: left; clear: both;">
+            <div class="x-form-field-wrap x-form-field-trigger-wrap" id="ext-gen15" style="float: left; width: 85px;"><input type="text" size="10" autocomplete="off" id="sb_dteStartDate" name="sb_dteStartDate" class="x-form-text x-form-field" style="visibility: visible; width: 61px;"><img src="./Xero/s.gif" alt="" class="x-form-trigger x-form-date-trigger" id="ext-gen16"></div>
+        </div>
+
+    </div>
+    <div class="field" id="ext-gen23">
+        <label for="sb_dteEndDate" style="width:90px;" id="ext-gen24">
+            End Date
+            <a class="icons date-tip" href="javascript:" id="ext-gen25" style="visibility: hidden;">&nbsp;</a>
+        </label>
+        <div id="sb_dteEndDate_container" class="datePicker dd" style="float: left; clear: both;">
+            <div class="x-form-field-wrap x-form-field-trigger-wrap" id="ext-gen21" style="float: left; width: 85px;"><input type="text" size="10" autocomplete="off" id="sb_dteEndDate" name="sb_dteEndDate" class="x-form-text x-form-field" style="visibility: visible; width: 61px;"><img src="./Xero/s.gif" alt="" class="x-form-trigger x-form-date-trigger" id="ext-gen22"></div>
+        </div>
+    </div>
+    <div class="cb-rows">
+        <div class="field cb-row">
+            <input type="checkbox" class="radio" id="sb_chkUnsentOnly" name="sb_chkUnsentOnly"><label for="sb_chkUnsentOnly">
+                Unsent Only
+            </label>
+        </div>
+        <div class="field cb-row">
+            <input type="checkbox" class="radio" id="sb_chkIsIncludeDeletedAndVoid" name="sb_chkIsIncludeDeletedAndVoid"><label for="sb_chkIsIncludeDeletedAndVoid">
+                Include Deleted &amp; Voided
+            </label>
+        </div>
+    </div>
+    <a style="margin-top:8px;" id="sbSubmit_" class="xbtn large blue x-pad" href="javascript:">Search</a>
+    <div class="field cancel" style="margin:9px 0 0 0;">
+        <label for="sb_dteEndDate">
+            or <a href="https://go.xero.com/AccountsReceivable/Search.aspx#">
+                Clear
+            </a>
+        </label>
+    </div>
+</div>
+<div class="action-bar">
+    <div>
+        <span class="count no-text"></span>
+        <div id="invoiceInvalidSelectionBubble" class="info-bubble-v1 bubble-hidden"></div>
+    </div>
+    <div class="small thin right skip searchbutton    button" id="ext-gen39"><a href="https://go.xero.com/AccountsReceivable/Search.aspx#" id="ext-gen40"><em class="none">&nbsp;</em><span class="text" data-automationid="Search-button">Search</span></a></div>
+    <span class="total">30 items</span>
+</div>
+
+@code {
+
+}

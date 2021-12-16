@@ -1,0 +1,89 @@
+﻿@typeparam TItem
+
+<table class="standard" id="ext-gen41">
+    <thead>
+        <tr>
+            <td class="">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=InvoiceNumber&amp;direction=ASC">
+                    Number
+                </a>
+            </td>
+            <td class="">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=Reference&amp;direction=ASC">
+                    Ref
+                </a>
+            </td>
+            <td class="icon">
+                &nbsp;
+            </td>
+            <td class="">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=PaidToName&amp;direction=ASC">
+                    To
+                </a>
+            </td>
+            <td class="selected">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=InvoiceDate&amp;direction=ASC">
+                    Date
+                </a>
+                <span class="icons descend">
+                    &nbsp;
+                </span>
+            </td>
+            <td class="">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=DueDate&amp;direction=ASC">
+                    Due Date
+                </a>
+            </td>
+            <td class="right">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=AmountPaid&amp;direction=ASC">
+                    Paid
+                </a>
+            </td>
+            <td class="currency">
+                &nbsp;
+            </td>
+            <td class="right
+                                 ">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=AmountDue&amp;direction=ASC">
+                    Due
+                </a>
+            </td>
+            <td class="currency">
+                &nbsp;
+            </td>
+            <td class="percent">
+                &nbsp;
+            </td>
+            <td class="
+                                 ">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=InvoiceStatus&amp;direction=ASC">
+                    Status
+                </a>
+            </td>
+            <td class="
+                                 ">
+                <a href="https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&amp;dateWithin=any&amp;pageSize=25&amp;unsentOnly=False&amp;orderby=Sent&amp;direction=ASC">
+                    Sent
+                </a>
+            </td>
+            <td class="icon">
+                &nbsp;
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < 20; i++)
+        {
+            <MudBlazor.GeneralGridRow></MudBlazor.GeneralGridRow>
+        }
+    </tbody>
+</table>
+
+
+@code {
+
+    [Parameter]
+    public List<TItem> Items { get; set; }
+
+}
+

@@ -1,0 +1,32 @@
+﻿<div id="" class="paginate">
+    <span>
+        Page
+        <select id="mainPagerGoToDropDown" name="mainPagerGoToDropDown">
+            <option value="1" selected="">1</option>
+            <option value="2">2</option>
+        </select>
+        of <em id="total-pages">2</em>&nbsp;<em>(<em id="total-paged-items">30</em> total items)</em>
+    </span>
+    <span>
+        <em>
+            Showing
+            <select id="mainPagerItemPerPageDropDown" name="mainPagerItemPerPageDropDown">
+                <option value="10">10</option>
+                <option value="25" selected="">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+            </select>
+            items per page
+        </em>
+    </span>
+    <ul>
+        <li class="selected"><a href="https://go.xero.com/AccountsReceivable/Search.aspx#">1</a></li>
+        <li><a href="https://go.xero.com/AccountsReceivable/Search.aspx?invoiceStatus=&amp;graphSearch=False&amp;dateWithin=any&amp;unsentOnly=False&amp;page=2&amp;PageSize=25&amp;orderBy=InvoiceDate&amp;direction=DESC">2</a></li>
+        <li><a href="https://go.xero.com/AccountsReceivable/Search.aspx?invoiceStatus=&amp;graphSearch=False&amp;dateWithin=any&amp;unsentOnly=False&amp;page=2&amp;PageSize=25&amp;orderBy=InvoiceDate&amp;direction=DESC">Next&nbsp;›</a></li>
+        <li><a href="https://go.xero.com/AccountsReceivable/Search.aspx?invoiceStatus=&amp;graphSearch=False&amp;dateWithin=any&amp;unsentOnly=False&amp;page=2&amp;PageSize=25&amp;orderBy=InvoiceDate&amp;direction=DESC">End&nbsp;»</a></li>
+    </ul>
+</div>
+@code {
+
+}

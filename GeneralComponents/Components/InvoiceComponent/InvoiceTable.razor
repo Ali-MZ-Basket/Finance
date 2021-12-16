@@ -1,0 +1,12 @@
+﻿@typeparam TItem
+@using Finance.Domain.Model.Accounting
+<div class="center xeroV2 invoicing-bridge ext-chrome ext-webkit" id="ext-gen6">
+    <GeneralHeader></GeneralHeader>
+    <GeneralTable Items="Invoices"></GeneralTable>
+</div>
+
+@code {
+    [Parameter]
+    public List<Invoice> Invoices { get; set; } = null!;
+
+}

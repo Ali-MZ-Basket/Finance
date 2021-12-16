@@ -1,0 +1,50 @@
+﻿@namespace MudBlazor
+@using GeneralComponents.Components.InvoiceComponent
+@using GeneralComponents.Utilities
+@inherits GeneralComponentBase
+
+<tr id="ext-gen42">
+    <td class="ref" id="ext-gen44">INV-0028</td>
+    <td class="ref" id="ext-gen45">GB1-White</td>
+    <td class="icon" id="ext-gen46"><em class="icons invoice" xmlns:str="http://exslt.org/strings" xmlns:string="http://gotdotnet.com/exslt/strings"></em></td>
+    <td class="from" id="ext-gen47"><a class="nav" href="https://go.xero.com/AccountsReceivable/View.aspx?InvoiceID=88617351-56ed-4c14-a30d-34a006d0a75a" id="ext-gen43">Bayside Club</a></td>
+    <td id="ext-gen48">6 Dec 2021</td>
+    <td data-column="dueDate" style="white-space:nowrap;" id="ext-gen49">
+        25 Dec 2021
+        &nbsp;&nbsp;
+    </td>
+    <td class="right" id="ext-gen50">0.00</td>
+    <td class="currency" id="ext-gen51">
+        &nbsp;
+    </td>
+    <td class="right xoAmount" id="ext-gen52">234.00</td>
+    <td class="currency" id="ext-gen53">
+        &nbsp;
+    </td>
+    <td class="percent" id="ext-gen54">
+        <em class="">
+            &nbsp;
+        </em>
+        &nbsp;
+    </td>
+    <td class="xoCode" style="display:none;" id="ext-gen55">CURR/USD</td>
+    <td class="xoDefaultCode" style="display:none;" id="ext-gen56">CURR/USD</td>
+    <td id="ext-gen57">Awaiting Payment</td>
+    <td id="sent_88617351-56ed-4c14-a30d-34a006d0a75a" class="sent hide"><em>Sent</em></td>
+    <td class="attachment" data-id="88617351-56ed-4c14-a30d-34a006d0a75a" id="ext-gen58"></td>
+</tr>
+
+@code {
+
+    //[CascadingParameter]
+    //private GeneralGrid Parent { get; set; }
+
+
+    // ToDo false,auto,true on all sizes.
+
+    [Parameter]
+    [Category(CategoryTypes.Item.Behavior)]
+    public RenderFragment ChildContent { get; set; }
+
+}
+
